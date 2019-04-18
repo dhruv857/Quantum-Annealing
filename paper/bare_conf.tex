@@ -1,0 +1,114 @@
+\documentclass[12pt,conference]{IEEEtran}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage[norule]{footmisc}
+\graphicspath{ {./images/} }
+\usepackage{float}
+\floatstyle{boxed} 
+\restylefloat{figure}
+\makeatletter
+\def\footnoterule{\kern-3\p@
+  \hrule \@width 2in \kern 2.6\p@} % the \hrule is .4pt high
+\makeatother
+
+
+\begin{document}
+
+\title{Quantum Annealing and Experience with D-Wave Systems \thanks{IBM}}
+% \IEEEspecialpapernotice{(Invited Paper)}
+
+
+\author{\IEEEauthorblockN{Dhruvil Gandhi}
+\IEEEauthorblockA{Seidenberg School of Computer \\Science and Information Systems,\\
+Pace University\\
+Email: dgandhi@pace.edu}
+\and
+\IEEEauthorblockN{Akshay More}
+\IEEEauthorblockA{Seidenberg School of Computer \\Science and Information Systems,\\
+Pace University\\
+Email: amore@pace.edu}}
+
+
+\maketitle
+
+\begin{abstract}
+\footnote  { about IBM supported class}This survey paper is an exploratory paper for D-Wave systems and using their Ocean Software. D-Wave systems offer adiabatic quantum computing through quantum annealing, we plan to use this to evaluate their examples. --tobechanged
+\end{abstract}
+
+\begin{IEEEkeywords}
+Quantum Computer, Quantum Annealing, Optimization Algos
+\end{IEEEkeywords}
+
+
+
+
+
+
+
+
+
+\section{Introduction}
+Quantum computing takes advantage of the strange ability of subatomic particles to exist in more than one state at any time. Due to the way the tiniest of particles behave, operations can be done much more quickly and use less energy than classical computers.
+In classical computing, a bit is a single piece of information that can exist in two states – 1 or 0. Quantum computing uses quantum bits, or 'qubits' instead. These are quantum systems with two states. However, unlike a usual bit, they can store much more information than just 1 or 0, because they can exist in any superposition of these values.
+A universal gate quantum computing system relies on building reliable qubits where basic quantum circuit operations, similar to the classical operations we all know, can be put together to create any sequence, running increasingly complex algorithms. Whereas, a quantum annealer systems work best on problems where there are a lot of potential solutions and finding a “good enough” or “local minima” solution, making something like faster flight possible.
+Currently, IBM is the only company that has made universal gate quantum computer commercially available but the biggest drawback is the number of qubits it provides for computation. On the other hand, D-Wave, the most famous quantum annealer is currently able to provide 2000 qubits for computation.
+D-Wave’s Ocean software stack provides a chain of tools on GitHub that implements the computations needed to transform an arbitrarily posed problem to a form solvable on a quantum solver. 
+
+
+\hfill mds
+ 
+\hfill April 18, 2019
+
+\subsection{Universal Quantum Computer}
+Subsection text here.
+
+
+\subsubsection{Gates based}
+Subsubsection text here.
+
+\subsubsection{Adiabiatic QC}
+Subsubsection text here.
+
+\section{Using Annealing for problems}
+Subsubsection text here.
+
+\section{D-Wave systems and using its SDK}
+Subsubsection text here.
+
+\section{Experimentation}
+Subsubsection text here.
+
+\subsection{Experimentat Algo 1}
+Subsubsection text here.
+\subsection{Experimentat Algo 2}
+Subsubsection text here.
+\subsection{Experimentat Algo 3}
+Subsubsection text here.
+
+\section{Experience and Observation}
+Subsubsection text here.
+
+\section{Future Steps}
+Subsubsection text here.
+
+\begin{thebibliography}{1}
+
+\bibitem{IEEEhowto:kopka}
+H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
+  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+
+\end{thebibliography}
+
+\appendix
+
+\subsection{First Appendix}
+\label{FirstAppendix}
+
+\subsubsection{First Subsection In Appendix}
+\label{FirstSubsectionAppendix}
+
+
+% that's all folks
+\end{document}
+
+
