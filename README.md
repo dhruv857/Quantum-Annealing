@@ -2,7 +2,7 @@
 
 Research work for *CS837: Quantum Computing*
 
-##Task List
+## Task List
 - [X] Get access to D-Wave Leap 
 - [X] Understand Quantum Annealing
 - [X] Experiment with Ocean SDK
