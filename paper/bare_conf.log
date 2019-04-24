@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  24 APR 2019 03:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  24 APR 2019 07:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1296,21 +1296,29 @@ LaTeX Info: Redefining \] on input line 2818.
 . 
 . Defining command \homework with sig. '' on line 764.
 .................................................
-) (/Users/dhruv/Projects/qca/paper/bare_conf.aux)
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+) (/Users/dhruv/Projects/qca/paper/bare_conf.aux
+
+LaTeX Warning: Label `fig:MCS' multiply defined.
+
+)
 \openout1 = `bare_conf.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
  (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count196
@@ -1368,7 +1376,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 <./images/uqc.png, id=1, 1125.20375pt x 534.99875pt>
 File: ./images/uqc.png Graphic file (type png)
 <use ./images/uqc.png>
-Package pdftex.def Info: ./images/uqc.png  used on input line 81.
+Package pdftex.def Info: ./images/uqc.png  used on input line 76.
 (pdftex.def)             Requested size: 227.62204pt x 108.22237pt.
  [1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -1377,50 +1385,42 @@ Package pdftex.def Info: ./images/uqc.png  used on input line 81.
 <./images/uqc_mapping.jpg, id=11, 1355.0625pt x 722.7pt>
 File: ./images/uqc_mapping.jpg Graphic file (type jpg)
 <use ./images/uqc_mapping.jpg>
-Package pdftex.def Info: ./images/uqc_mapping.jpg  used on input line 98.
+Package pdftex.def Info: ./images/uqc_mapping.jpg  used on input line 93.
 (pdftex.def)             Requested size: 227.62204pt x 121.39072pt.
-<./images/sp-energy.png, id=12, 946.53625pt x 551.05875pt>
+
+Underfull \vbox (badness 1231) has occurred while \output is active []
+
+ [2 <./images/uqc_mapping.jpg>]
+<./images/sp-energy.png, id=22, 946.53625pt x 551.05875pt>
 File: ./images/sp-energy.png Graphic file (type png)
 <use ./images/sp-energy.png>
-Package pdftex.def Info: ./images/sp-energy.png  used on input line 155.
+Package pdftex.def Info: ./images/sp-energy.png  used on input line 146.
 (pdftex.def)             Requested size: 142.26378pt x 82.82341pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[2 <./images/uqc_mapping.jpg>]
 <./images/qubit_energy.png, id=23, 942.52126pt x 551.05875pt>
 File: ./images/qubit_energy.png Graphic file (type png)
 <use ./images/qubit_energy.png>
-Package pdftex.def Info: ./images/qubit_energy.png  used on input line 166.
+Package pdftex.def Info: ./images/qubit_energy.png  used on input line 157.
 (pdftex.def)             Requested size: 142.26378pt x 83.17656pt.
 <./images/qubit_mag.png, id=25, 718.685pt x 553.06625pt>
 File: ./images/qubit_mag.png Graphic file (type png)
 <use ./images/qubit_mag.png>
-Package pdftex.def Info: ./images/qubit_mag.png  used on input line 177.
+Package pdftex.def Info: ./images/qubit_mag.png  used on input line 168.
 (pdftex.def)             Requested size: 142.26378pt x 109.48044pt.
 <./images/qubit_couplet.png, id=26, 1304.875pt x 714.67pt>
 File: ./images/qubit_couplet.png Graphic file (type png)
 <use ./images/qubit_couplet.png>
-Package pdftex.def Info: ./images/qubit_couplet.png  used on input line 188.
+Package pdftex.def Info: ./images/qubit_couplet.png  used on input line 179.
 (pdftex.def)             Requested size: 142.26378pt x 77.91602pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 <./images/entangled_low.png, id=27, 1025.8325pt x 774.895pt>
 File: ./images/entangled_low.png Graphic file (type png)
 <use ./images/entangled_low.png>
-Package pdftex.def Info: ./images/entangled_low.png  used on input line 199.
+Package pdftex.def Info: ./images/entangled_low.png  used on input line 190.
 (pdftex.def)             Requested size: 142.26378pt x 107.45587pt.
-
-LaTeX Warning: Citation `1' on page 3 undefined on input line 206.
-
-[3 <./images/sp-energy.png> <./images/qubit_energy.png> <./images/qubit_mag.png> <./images/qubit_couplet.png> <./images/entangled_low.png>]
+ [3 <./images/sp-energy.png> <./images/qubit_energy.png> <./images/qubit_mag.png> <./images/qubit_couplet.png> <./images/entangled_low.png>]
 <./images/Leap-db1.png, id=33, 635.37375pt x 362.35374pt>
 File: ./images/Leap-db1.png Graphic file (type png)
 <use ./images/Leap-db1.png>
-Package pdftex.def Info: ./images/Leap-db1.png  used on input line 232.
+Package pdftex.def Info: ./images/Leap-db1.png  used on input line 223.
 (pdftex.def)             Requested size: 227.62204pt x 129.8114pt.
 
 
@@ -1429,24 +1429,44 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <./images/Leap-db2.png, id=34, 712.6625pt x 312.16624pt>
 File: ./images/Leap-db2.png Graphic file (type png)
 <use ./images/Leap-db2.png>
-Package pdftex.def Info: ./images/Leap-db2.png  used on input line 241.
+Package pdftex.def Info: ./images/Leap-db2.png  used on input line 232.
 (pdftex.def)             Requested size: 227.62204pt x 99.7047pt.
-[4 <./images/Leap-db2.png> <./images/Leap-db1.png>]
+
+LaTeX Warning: Citation `6' on page 4 undefined on input line 240.
+
+[4 <./images/Leap-db1.png> <./images/Leap-db2.png>]
+
+LaTeX Warning: Citation `6' on page 5 undefined on input line 266.
+
 <./images/sdk.png, id=40, 473.77pt x 369.38pt>
 File: ./images/sdk.png Graphic file (type png)
 <use ./images/sdk.png>
-Package pdftex.def Info: ./images/sdk.png  used on input line 285.
-(pdftex.def)             Requested size: 227.62204pt x 177.46384pt.
+Package pdftex.def Info: ./images/sdk.png  used on input line 299.
+(pdftex.def)             Requested size: 199.16928pt x 155.28508pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 <./images/map_coloring.png, id=41, 462.528pt x 346.896pt>
 File: ./images/map_coloring.png Graphic file (type png)
 <use ./images/map_coloring.png>
-Package pdftex.def Info: ./images/map_coloring.png  used on input line 300.
+Package pdftex.def Info: ./images/map_coloring.png  used on input line 314.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
- [5 <./images/sdk.png> <./images/map_coloring.png>] (/Users/dhruv/Projects/qca/paper/bare_conf.lof)
-\tf@lof=\write3
-\openout3 = `bare_conf.lof'.
+[5]
+<./images/esg.png, id=45, 562.1pt x 222.8325pt>
+File: ./images/esg.png Graphic file (type png)
+<use ./images/esg.png>
+Package pdftex.def Info: ./images/esg.png  used on input line 326.
+(pdftex.def)             Requested size: 227.62204pt x 90.23647pt.
 
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./images/qpuvscpu.png, id=46, 648.4225pt x 579.16376pt>
+File: ./images/qpuvscpu.png Graphic file (type png)
+<use ./images/qpuvscpu.png>
+Package pdftex.def Info: ./images/qpuvscpu.png  used on input line 339.
+(pdftex.def)             Requested size: 142.26378pt x 127.06293pt.
+[6 <./images/sdk.png> <./images/map_coloring.png> <./images/esg.png> <./images/qpuvscpu.png>]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -1458,26 +1478,29 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[6
+[7
 
 ] (/Users/dhruv/Projects/qca/paper/bare_conf.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 11916 strings out of 492649
- 225270 string characters out of 6129622
- 271870 words of memory out of 5000000
- 15720 multiletter control sequences out of 15000+600000
+ 12013 strings out of 492649
+ 226476 string characters out of 6129622
+ 272748 words of memory out of 5000000
+ 15815 multiletter control sequences out of 15000+600000
  569595 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,8n,38p,10417b,275s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,8n,38p,10434b,295s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /Users/dhruv/Projects/qca/paper/bare_conf.pdf (6 pages, 2547301 bytes).
+Output written on /Users/dhruv/Projects/qca/paper/bare_conf.pdf (7 pages, 2674260 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
- 49 compressed objects within 1 object stream
+ 95 PDF objects out of 1000 (max. 8388607)
+ 53 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

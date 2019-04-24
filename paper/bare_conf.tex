@@ -7,6 +7,7 @@
 \floatstyle{boxed} 
 \restylefloat{figure}
 \usepackage{physics}
+\usepackage{cite}
 
 % footer style
 \makeatletter
@@ -47,7 +48,8 @@ Email: amore@pace.edu}}
 \maketitle
 
 \begin{abstract}
-\footnote  {about IBM supported class}This survey paper is an exploratory paper for D-Wave systems and using their Ocean Software. D-Wave systems offer adiabatic quantum computing through quantum annealing, we plan to use this to evaluate their examples. --tobechanged
+\footnote  {This paper is for CS 837 at Pace University and the class is supported by IBM's grant.}
+\footnote{ Thanks to Prof. Stephan Barabasi,PhD , Prof. Charles Tappert, Phd and Prof. Ronald Frank} There are different forms of quantum computing. D-Wave Systems offers adiabatic quantum computing through quantum annealing. We explore the principle of quantum annealing, how adiabatic quantum computing approach works, understand application of quantum annealing and how to implement example algorithms on their system using thier SDK.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -55,19 +57,12 @@ Quantum Computer, Quantum Annealing, Optimization Algos, D-Wave, Hamiltonian
 \end{IEEEkeywords}
 
 
-
-
-
-
-
-
-
 \section{Introduction}
-Quantum Computing has evolved significantly this decade. With a lot of services, infrastructures and tool kits commercially available to the public, there has been a great advancement in the field of quantum computing. A quantum computer takes advantage of the  propoery of qubit to exist in more than one state at any time. Compared to classical comouting, based on binary bits 0 and 1, quantum computers are based on 'qubits', which can store a lot more information than classical bit due to its propoery to be able to exist in more than one state. 
+Quantum Computing has evolved significantly this decade. With a lot of services, infrastructures and tool kits commercially available to the public, there has been a great advancement in the field of quantum computing. A quantum computer takes advantage of the  propoery of qubit to exist in more than one state at any time. Compared to classical comouting, based on binary bits 0 and 1, quantum computers are based on 'qubits', which can store a lot more information than classical bit due to its propoery to be able to exist in more than one state. \cite{1}
 
-Various companies have made their quantum computers available to the public, IBM with Q-Experience, D-Wave Systems with D-Wave 2000Q, Regitti, Alibaba, Microsoft, Google, to name a few. All this quantum computers works on different approaches of quantum computing.
+Various companies have made their quantum computers available to the public, IBM with Q-Experience, D-Wave Systems with D-Wave 2000Q, Regitti, Alibaba, Microsoft, Google, to name a few. All this quantum computers works on different approaches of quantum computing.\cite{2}
 
-IBM created first universal quantum computer. D-Wave created adiabatic quantum computer. There are a lot of resources available to learn and experiment with these systems. Through the paper, we briefly understand what a universal quantum computer is, different types of quntum computing, advantages and disadvantages. We explore D-Wave Quantum Computer, the principle it works on, implement optimization algorithm and show the results. 
+IBM created first universal quantum computer. D-Wave created adiabatic quantum computer.\cite{3} There are a lot of resources available to learn and experiment with these systems. Through the paper, we briefly understand what a universal quantum computer is, different types of quntum computing, advantages and disadvantages. We explore D-Wave Quantum Computer, the principle it works on, implement optimization algorithm and show the results. 
 
 
 \section{Background}
@@ -83,7 +78,7 @@ IBM created first universal quantum computer. D-Wave created adiabatic quantum c
   \label{fig:UniversalQC}
 \end{figure}
 
-The first quantum computer was built using gate model approach where we control and manipulate state of the Quantumn bits or qbits to do operations and run algorithms. The Universal Quantum Computer is a one where we gate model approach is able to map to other forms of quantum computing in polynomial time and polynomial resources. Various approaches of qantum computing are:
+The first quantum computer was built using gate model approach where we control and manipulate state of the Quantumn bits or qbits to do operations and run algorithms. The Universal Quantum Computer is a one where we gate model approach is able to map to other forms of quantum computing in polynomial time and polynomial resources. Various approaches of qantum computing are\cite{4}:
 \begin{itemize}
   \item Circuit Based Quantum Computing
   \item Adiabatic Quantum Commputing
@@ -104,10 +99,6 @@ To be a universal quantum computer, a quantum computer must be able to operate a
 
 
 
-
-
-
-
 \subsubsection{Gates based}
 In gate based quantum computing, the gates are built on the principle of qubits: \emph{superposition} and \emph{entanglement}.
 
@@ -116,7 +107,7 @@ Qubit can exist in both 0 and 1 state. It can be represented by the equation:
 \begin{equation*}
   \ket {\psi} = a_0 \ket{0} + a_1 \ket{1}
 \end{equation*} 
-where a\textsubscript{0} and a\textsubscript{1} are configuration that specifies all the possibilities of state being in 0 and 1.
+where a\textsubscript{0} and a\textsubscript{1} are configuration that specifies all the possibilities of state being in 0 and 1.\cite{1}
 
 \paragraph{Entanglement}
 In quantum computing, in a multi-particle system, entanglement is property of qubits where the state of one qubit cannot be described independently. To express the state of system with two Particles A and B, the quantum state can be described as tensor product of two state space described by the equation:
@@ -126,7 +117,7 @@ $\ket {\Phi} = \ket{AB}$
 
 
 \subsubsection{Adiabatic Quantum Computer}
-Adiabatic quantum computing is based on Hamiltonian framework for quantum mechanics. Quantum systems evolves by unitary operators. We find the initial easily implementable Hamiltonian H\textsubscript{0}, find a path H\textsubscript{t} and find the final Hamiltonian H\textsubscript{1} keeping the system in ground state which depends on eigen gap. The basic principle of the adiabatic quantum computing is: as long as the path is traversed slowly from H\textsubscript{0} to H\textsubscript{1}, the system remains in ground state and the required solution is obtained. If traversed faster, the system jumps state and it results in error. 
+Adiabatic quantum computing is based on Hamiltonian framework for quantum mechanics. Quantum systems evolves by unitary operators. We find the initial easily implementable Hamiltonian H\textsubscript{0}, find a path H\textsubscript{t} and find the final Hamiltonian H\textsubscript{1} keeping the system in ground state which depends on eigen gap. The basic principle of the adiabatic quantum computing is: as long as the path is traversed slowly from H\textsubscript{0} to H\textsubscript{1}, the system remains in ground state and the required solution is obtained. If traversed faster, the system jumps state and it results in error.
 
 \paragraph{Hamiltonian Formula} 
 The Hamiltonian formula can be simplified as follows:
@@ -144,7 +135,7 @@ One thing to note is that the initial states are Quantum states and the final st
 \paragraph{Eigen Value and Anti-crossing}
 In adiabatic system, the systems stays in ground state through out the cycle of getting solution. Staying in ground state depends on speed of traverseing, if too fast or the thermal energy from physical systems. The system initially is at 0 enery level and at the end, it is at zero energy level. During the process, the systems's state might jump and escape from ground state to higher energy state based on the energy gap between two states, which is called anti-crossing and Eigen value of states.
 
-\section{Quantum Annealing for problems}
+\section{Quantum Annealing for problems} \cite{4}
 Quantum Annealing is done using the adiabatic quantum computing approach.
 
 A qubit can exist in two state due to superposition initially, 0 or $\downarrow$  spin and 1 or $\uparrow$. The energy state at superposition is lowest. 
@@ -203,10 +194,10 @@ Hence the potential of this coupled qubits depends on biases of each qubits and 
 
 The combination (C) of states of a quantum computer for quantum annelaing depends on number of qubits (n) defined as: $ C = 2^n$.
 
-To compare this with universal gate based quantum computer, the main difference lies in the way a problem is solved. In gate based quantum computer, the states of individual qubits is controlled and the solution is obtained. In quantum annealing, the problem is formulated, desired Hamiltonian is calculated, finally the system after going through annealing schedule\cite{1}, calculates the solution, which is the minima on energy curve of the ground state of quantum system. Quantum annealing is useful for optimization problem, where the goal is to get best possible solution with lowest cost. Quantum annealing is not good to solve search algorithms like Grover's search algorithm. 
+To compare this with universal gate based quantum computer, the main difference lies in the way a problem is solved. In gate based quantum computer, the states of individual qubits is controlled and the solution is obtained. In quantum annealing, the problem is formulated, desired Hamiltonian is calculated, finally the system after going through annealing schedule, calculates the solution, which is the minima on energy curve of the ground state of quantum system. Quantum annealing is useful for optimization problem, where the goal is to get best possible solution with lowest cost. Quantum annealing is not good to solve search algorithms like Grover's search algorithm. 
 
 \section{D-Wave systems and using its SDK and Cloud}
-D-Wave Systems Inc has been developing quantum computers, which currently offers quantum computer with 2038 Qubits, which works on the principle of quantum annealing, as explained above. Quantum annealing can be used for areas including:
+D-Wave Systems Inc has been developing quantum computers, which currently offers quantum computer with 2038 Qubits, which works on the principle of quantum annealing, as explained above. Quantum annealing can be used for areas including:\cite{3}
 \begin{itemize}
   \item[$-$] Optimization 
   \item[$-$] Machine learning
@@ -221,9 +212,9 @@ D-Wave Systems Inc has been developing quantum computers, which currently offers
 
 The system is based on superconducting device at absolute zero temperature.
 
-\paragraph{Ocean SDK} D-Wave offers Ocean SDK which has a set of tools to run,simulate and implement quantum algorithms. The D-Wave system provides a quantum processing unit (QPU) to solve a binary quadratic model (BQM). The are advanced features and tools for further improvements of the solution. There are numerous tools provided in the SDK including binary and quadratic sampler, annealing sampler, Ising problems micro-embedding. Some of the examples are available online on github and on ocean's doc website. 
+\paragraph{Ocean SDK} D-Wave offers Ocean SDK which has a set of tools to run,simulate and implement quantum algorithms. The D-Wave system provides a quantum processing unit (QPU) to solve a binary quadratic model (BQM). The are advanced features and tools for further improvements of the solution. There are numerous tools provided in the SDK including binary and quadratic sampler, annealing sampler, Ising problems micro-embedding. Some of the examples are available online on github \cite{5} and on ocean's doc website.{6}
 
-\paragraph{LEAP} Leap is a real time environment from D-Wave which provides tools and access to quantum computing in cloud to its uses. It has interactive examples which explains implementation of integer factoring problem and structural imbalance problem with cases, and comparision of time taken to solve it on D-Wave vs classical computer.
+\paragraph{LEAP} Leap is a real time environment from D-Wave which provides tools and access to quantum computing in cloud to its uses. It has interactive examples which explains implementation of integer factoring problem and structural imbalance problem with cases, and comparision of time taken to solve it on D-Wave vs classical computer. Ocean's SDK can be implemented on LEAP.
 
 \floatstyle{plain}
 \restylefloat{figure}
@@ -246,7 +237,7 @@ The system is based on superconducting device at absolute zero temperature.
 
 
 \section{Experimentation}
-To experiment with D-Wave system, we tried to use the LEAP system and run Integer Factoring and Structural Imbalance problem. Besides LEAP, we implemented demo examples from Ocean SDK, both of which can be found on the github and in documents.
+To experiment with D-Wave system, we tried to use the LEAP system and run Integer Factoring and Structural Imbalance problem. Besides LEAP, we implemented demo examples from Ocean SDK, both of which can be found on the github\cite{6} and in documents\cite{7}.
 
 
 \subsection{Map Coloring}
@@ -256,7 +247,7 @@ Map coloring problem is a constraint satisfaction problem. The primary requireme
 
 In map coloring example, all regions are to be colored and the constraint is that for any neighbouring regions, the color should not be same. In this case, the regions are states of Canada.
 
-To implement this using Ocean SDK, we followed and used the example given on D-Wave's documentation. The steps briefly to solve the problem are: 
+To implement this using Ocean SDK, we followed and used the example given on D-Wave's documentation\cite{7}. The steps briefly to solve the problem are: 
 
 \begin{itemize}
   \item Formulate problem as graphic
@@ -267,11 +258,34 @@ To implement this using Ocean SDK, we followed and used the example given on D-W
 \end{itemize}
 
 \subsection{Integer Factoring}
-\hfill $\sum_i^N q_ix_i + \sum_{i<j}^N q_{i,j}x_i  x_j$
-Subsubsection text here.
+Integer factoring is a P and NP-hard problem for classical computers. For quantum computing it runs in polynomial time when universal gate model approach is used, currently for which, technology does not allow the possibility for large numbers.
 
-\subsection{Structural Imbalance}
-Subsubsection text here.
+Using annealing, we can represent integer factoring as constraint satisfaction problem. For integer factoring, the constraints are to whole number factors a and b and their multiplication be equal to factored number P.
+
+\subsubsection{On D-Wave}
+D-Wave systems solve binary quadratic models (BQM), the Ising model traditionally used in statistical mechanics and its computer-science equivalent, the quadratic unconstrained binary optimization (QUBO) problem. Given $N$ variables $x_1,...,x_N$, where each variable $x_i$ can have binary values $0$ or $1$, the system finds assignments of values that minimize \cite{6}
+
+$\sum_i^N q_ix_i + \sum_{i<j}^N q_{i,j}x_i  x_j$,
+
+where $q_i$ and $q_{i,j}$ are configurable (linear and quadratic) coefficients. To formulate a problem for the D-Wave system is to program $q_i$ and $q_{i,j}$ so that assignments of $x_1,...,x_N$ also represent solutions to the problem.
+
+There are different ways to formulate the factoring problem as a BQM. We program D-Wave system using following steps:
+
+\begin{itemize}
+  \item Express $P=ab$ as a CSP with a binary multiplication circuit.
+  \item Convert to a BQM.
+  \item Program the quantum computer with the BQM's coefficients.
+\end{itemize}
+
+
+\subsection{Optimisation - Structural Imbalance}
+Structural imbalance can be defined as a measure for a network which can not be cleanly divided, is the minimum number of egdes which violates the triadic relation theory. 
+To solve structural imbalance, finding a division that minimizes this violation is a NP hard problem. It is an examlpe of optimization, other include traffic flow, protein-folding etc.
+
+The problem is similar to Ising problem. The problem is formulated using Ocean's penalty model. The micro-embedding feature is used to embed 200 nodes in the machine.
+
+The basis for solving the given Militants mapping project is done using penalty model where undesirable outcomes are given a higher potential to be eliminated from the solution. 
+
 
 \section{Experience and Result}
 Quantum annealing proves to be useful in general to solve problems and find solution in terms of time required as compared to a quantum computer. D-Wave's Ocean SDK and LEAP is useful tool to learn quantum annealing and how to practically use it and implement to solve problems. It provides an insight to how just using adiabatic quantum computing approach, number of qubits can be increased in a quantum computer as compared to a universal gate based quantum computer and the advantages and disadvantages of adiabatic quantum computing. 
@@ -282,7 +296,7 @@ Setting up Ocean SDK gives the connection to D-Wave's QPU (Quantum Processing Un
 \restylefloat{figure}
 \begin{figure}[h]
   \centering
-  \includegraphics[width=8cm]{sdk.png}
+  \includegraphics[width=7cm]{sdk.png}
   \caption{Ocean SDK ping status}
   \label{fig:OSDK}
 \end{figure}
@@ -302,6 +316,31 @@ For map coloring problem, the following graph plot was obtained.
   \label{fig:MCS}
 \end{figure}
 
+\subsection{Integer Factoring}
+For integer factoring, there is an interactive demo on LEAP. We implemented the available demo on LEAP using Jupyter notebook provided with the resources. For 21, 7 and 3 were obtained. The energy sample for solution is shown in the figure below.
+
+\floatstyle{plain}
+\restylefloat{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=8cm]{esg.png}
+  \caption{Energy Sample Graph for 21}
+  \label{fig:ESG}
+\end{figure}
+
+\subsection{Structural Imbalance}
+Both interactive demo and the jupyter notebook were implemented.
+For structural imabalance, the experiment had to be run multiple times as the mapping of graph to the problem is done using heuristic minor-embedding which doesn't behave as expected and fails. 
+
+\floatstyle{plain}
+\restylefloat{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=5cm]{qpuvscpu.png}
+  \caption{Solution time: QPU vs CPU}
+  \label{fig:MCS}
+\end{figure}
+
 
 \section{Future Steps}
 All the work that was carried out is in regards to Quantum Annealing. For next steps we want to try out all the available advanced features on D-Wave and implement advanced algorithms to solve problems. 
@@ -309,27 +348,30 @@ All the work that was carried out is in regards to Quantum Annealing. For next s
 \section{Conclusion}
 D-Wave's quantum computer are powerful quatum computer for quantum annealing. The resoures and example given can be easily understood and implemented. Quantum Annealing is useful to solve problem where the best possible solution is required. This feature can also be used in machine learning, authentication and validation and analysis. Using leap's interactive examples, we understand how solving these problems compare on a classical computer versus a quantum computer and the advantage it provides in terms of time. 
 
-\begin{thebibliography}{1}
+\begin{thebibliography}{r1}
 
-\bibitem{IEEEhowto:kopka}
-H.~Kopka and P.~W. Daly, \emph{A Guide to}, 3rd~ed.\hskip 1em plus
-  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+\bibitem{1}
+Nielsen, Michael A and Chuang, Isaac L \emph{Quantum computation and quantum information}
+
+\bibitem{2}
+Doung Finke, \emph{Qubit Count} \url{https://quantumcomputingreport.com/scorecards/qubit-count/}
+
+\bibitem{3}
+D-Wave 2000Q Announcement \url{https://www.dwavesys.com/press-releases/d-wave%C2%A0announces%C2%A0d-wave-2000q-quantum-computer-and-first-system-order}
+
+\bibitem{4} 
+D-Wave Resource Videos \url{https://www.dwavesys.com/resources/videos}
+
+\bibitem{5}
+Ocean SDK Demos \url{https://github.com/dwavesystems/demos}
+
+\bibitem{7}
+D-Wave documentation \url{https://docs.ocean.dwavesys.com/en/latest/index.html}
+
+\bibitem{8}
+Paper Repo \url{https://github.com/dhruv857/Quantum-Annealing}
 
 \end{thebibliography}
-
-\appendix
-
-\subsection{First Appendix}
-\label{FirstAppendix}
-
-\subsubsection{First Subsection In Appendix}
-\label{FirstSubsectionAppendix}
-
-\subsection{FIGURES AND TABLES}
-
-\listoffigures
-
-% that's all folks
 \end{document}
 
 
