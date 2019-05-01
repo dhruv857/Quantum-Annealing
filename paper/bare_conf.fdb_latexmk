@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1556744860 "/Users/dhruv/Projects/qca/paper/bare_conf.tex" "/Users/dhruv/Projects/qca/paper/bare_conf.pdf" "bare_conf" 1556744881
-  "/Users/dhruv/Projects/qca/paper/bare_conf.aux" 1556744863 4480 a492b0b8347877de4e8e4c4c35306f75 ""
-  "/Users/dhruv/Projects/qca/paper/bare_conf.tex" 1556744881 19632 a52e1c1298e75f43f9d225a0bcb59865 ""
+["pdflatex"] 1556751356 "/Users/dhruv/Projects/qca/paper/bare_conf.tex" "/Users/dhruv/Projects/qca/paper/bare_conf.pdf" "bare_conf" 1556751360
+  "/Users/dhruv/Projects/qca/paper/bare_conf.aux" 1556751360 4480 a492b0b8347877de4e8e4c4c35306f75 ""
+  "/Users/dhruv/Projects/qca/paper/bare_conf.tex" 1556751356 19611 6c546810a07cfdb406008ff06891188c ""
   "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc" 1480098666 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1480098689 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -91,8 +91,8 @@
   "/usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1523934516 4220280 10cab8fbd7c5a7c52aba9917e190d018 ""
   "/usr/local/texlive/2018/texmf.cnf" 1523934483 577 0b39adfd7c93507ff20c9c14c2f1a33f ""
   "IEEEtran.cls" 1356661156 220413 8baab577f34760640e27918fe5178519 ""
-  "bare_conf.aux" 1556744863 4480 a492b0b8347877de4e8e4c4c35306f75 ""
-  "bare_conf.tex" 1556744881 19632 a52e1c1298e75f43f9d225a0bcb59865 ""
+  "bare_conf.aux" 1556751360 4480 a492b0b8347877de4e8e4c4c35306f75 ""
+  "bare_conf.tex" 1556751356 19611 6c546810a07cfdb406008ff06891188c ""
   "images/Leap-db1.png" 1556086415 101237 281001f0a1b0f3301839a0770cf64ed8 ""
   "images/Leap-db2.png" 1556086406 73576 a5c04bcd5309cfe7ded8346308dda041 ""
   "images/entangled_low.png" 1556079069 321691 94035be68549cdc74b580978a2154b97 ""
@@ -107,8 +107,8 @@
   "images/uqc.png" 1556080704 679363 6b3905510260ad00b67f599362e495c6 ""
   "images/uqc_mapping.jpg" 1556080737 279430 8bbf944718a79de9730a5a71266b36c2 ""
   (generated)
-  "/Users/dhruv/Projects/qca/paper/bare_conf.pdf"
-  "bare_conf.pdf"
-  "bare_conf.log"
   "bare_conf.aux"
+  "/Users/dhruv/Projects/qca/paper/bare_conf.pdf"
+  "bare_conf.log"
   "/Users/dhruv/Projects/qca/paper/bare_conf.log"
+  "bare_conf.pdf"
