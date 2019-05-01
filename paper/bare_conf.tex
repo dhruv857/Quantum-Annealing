@@ -1,13 +1,14 @@
 \documentclass[12pt,conference]{IEEEtran}
 \usepackage{url}
 \usepackage{graphicx}
-\usepackage[norule]{footmisc}
+\usepackage[stable]{footmisc}
 \graphicspath{ {./images/} }
 \usepackage{float}
 \floatstyle{boxed} 
 \restylefloat{figure}
 \usepackage{physics}
 \usepackage{cite}
+\usepackage{fancyhdr}
 
 % footer style
 \makeatletter
@@ -25,32 +26,50 @@
 \hyphenpenalty=10000
 \hbadness=10000
 
+\IEEEoverridecommandlockouts
+
+%%header
+\makeatletter
+\let\old@ps@headings\ps@headings
+\let\old@ps@IEEEtitlepagestyle\ps@IEEEtitlepagestyle
+\def\confheader#1{%
+% for all pages except the first
+% \def\ps@headings{%
+% \old@ps@headings%
+% \def\@oddhead{\strut\hfill#1\hfill\strut}%
+% \def\@evenhead{\strut\hfill#1\hfill\strut}%
+% }%
+% for the first page
+\def\ps@IEEEtitlepagestyle{%
+\old@ps@IEEEtitlepagestyle%
+\def\@oddhead{\strut\hfill#1\hfill\strut}%
+\def\@evenhead{\strut\hfill#1\hfill\strut}%
+}%
+\ps@headings%
+}
+\makeatother
+
 
 
 
 \begin{document}
 
-\title{Quantum Annealing and Experience with D-Wave Systems}
-% \IEEEspecialpapernotice{(Invited Paper)}
+\title{Quantum Annealing and Experience with D-Wave Systems \textsuperscript{1} \thanks{ \textsuperscript{1}This paper is for CS 837 at Pace University and the class is supported by IBM's grant.}}
 
 
-\author{\IEEEauthorblockN{Dhruvil Gandhi}
-\IEEEauthorblockA{Seidenberg School of Computer \\Science and Information Systems,\\
-Pace University\\
-Email: dgandhi@pace.edu}
-\and
-\IEEEauthorblockN{Akshay More}
-\IEEEauthorblockA{Seidenberg School of Computer \\Science and Information Systems,\\
-Pace University\\
-Email: amore@pace.edu}}
+\author{\IEEEauthorblockN{Dhruvil Gandhi, Akshay More}
+\IEEEauthorblockA{Seidenberg School of CSIS, Pace University, Pleasantville, New York 10570\\
+Email: \{dgandhi, amore\}@pace.edu}}
 
 
 \maketitle
+\confheader{Proceedings of Student-Faculty Research Day Conference, CSIS, Pace University, May 3rd, 2019}
 
 \begin{abstract}
-\footnote  {This paper is for CS 837 at Pace University and the class is supported by IBM's grant.}
-\footnote{ Thanks to Prof. Stephan Barabasi,PhD , Prof. Charles Tappert, Phd and Prof. Ronald Frank} There are different forms of quantum computing. D-Wave Systems offers adiabatic quantum computing through quantum annealing. We explore the principle of quantum annealing, how adiabatic quantum computing approach works, understand application of quantum annealing and how to implement example algorithms on their system using thier SDK.
+There are different forms of quantum computing. D-Wave Systems offers adiabatic quantum computing through quantum annealing. We explore the principle of quantum annealing, how adiabatic quantum computing approach works, understand application of quantum annealing and how to implement example algorithms on their system using thier SDK.
 \end{abstract}
+
+
 
 \begin{IEEEkeywords}
 Quantum Computer, Quantum Annealing, Optimization Algos, D-Wave, Hamiltonian

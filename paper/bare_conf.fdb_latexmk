@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1556105132 "/Users/dhruv/Projects/qca/paper/bare_conf.tex" "/Users/dhruv/Projects/qca/paper/bare_conf.pdf" "bare_conf" 1556105229
-  "/Users/dhruv/Projects/qca/paper/bare_conf.aux" 1556105136 4480 b5ec649160c957dd775a453bf455ceeb ""
-  "/Users/dhruv/Projects/qca/paper/bare_conf.tex" 1556105229 19230 0a8e6ff0fc92fc6740f3304719a0f6a2 ""
+["pdflatex"] 1556744860 "/Users/dhruv/Projects/qca/paper/bare_conf.tex" "/Users/dhruv/Projects/qca/paper/bare_conf.pdf" "bare_conf" 1556744881
+  "/Users/dhruv/Projects/qca/paper/bare_conf.aux" 1556744863 4480 a492b0b8347877de4e8e4c4c35306f75 ""
+  "/Users/dhruv/Projects/qca/paper/bare_conf.tex" 1556744881 19632 a52e1c1298e75f43f9d225a0bcb59865 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc" 1480098666 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1480098689 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -23,6 +23,7 @@
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm" 1480098701 1524 d89e2d087a9828407a196f428428ef4a ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1480098701 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1480098701 1288 655e228510b4c2a1abe905c368440826 ""
+  "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1480098701 1292 296a67155bdbfc32aa9c636f21e91433 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr6.tfm" 1480098701 1300 b62933e007d01cfd073f79b963c01526 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1480098701 1292 21c1c5bfeaebccffdb478fd231a0997d ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr9.tfm" 1480098701 1292 6b21b9c2c7bebb38aa2273f7ca0fb3af ""
@@ -64,6 +65,7 @@
   "/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty" 1523134290 4116 32e6abd27229755a83a8b7f18e583890 ""
   "/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty" 1523134290 2432 8ff93b1137020e8f21930562a874ae66 ""
   "/usr/local/texlive/2018/texmf-dist/tex/latex/cite/cite.sty" 1480098825 26218 19edeff8cdc2bcb704e8051dc55eb5a7 ""
+  "/usr/local/texlive/2018/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty" 1498861448 10663 d7fcc0dc4f35e8998b8cfeef8407d37d ""
   "/usr/local/texlive/2018/texmf-dist/tex/latex/float/float.sty" 1480098828 6749 16d2656a1984957e674b149555f1ea1d ""
   "/usr/local/texlive/2018/texmf-dist/tex/latex/footmisc/footmisc.sty" 1480098829 25776 d28bd6d82f168f8cb2268584b67a2a98 ""
   "/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1480098830 1224 978390e9c2234eab29404bc21b268d1e ""
@@ -81,6 +83,7 @@
   "/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty" 1480098836 7075 2fe3d848bba95f139de11ded085e74aa ""
   "/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty" 1480098836 22417 1d9df1eb66848aa31b18a593099cf45c ""
   "/usr/local/texlive/2018/texmf-dist/tex/latex/physics/physics.sty" 1480098837 29610 a9597219b282d9c78b02393dcd7d4322 ""
+  "/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/omsptm.fd" 1480098837 576 95c2c0baea9c719a4be29a3d4122498b ""
   "/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/ot1ptm.fd" 1480098837 961 15056f4a61917ceed3a44e4ac11fcc52 ""
   "/usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty" 1480098842 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/usr/local/texlive/2018/texmf-dist/web2c/texmf.cnf" 1522066949 33362 cf75436e19743e94a92a6b1b9183c434 ""
@@ -88,8 +91,8 @@
   "/usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1523934516 4220280 10cab8fbd7c5a7c52aba9917e190d018 ""
   "/usr/local/texlive/2018/texmf.cnf" 1523934483 577 0b39adfd7c93507ff20c9c14c2f1a33f ""
   "IEEEtran.cls" 1356661156 220413 8baab577f34760640e27918fe5178519 ""
-  "bare_conf.aux" 1556105136 4480 b5ec649160c957dd775a453bf455ceeb ""
-  "bare_conf.tex" 1556105229 19230 0a8e6ff0fc92fc6740f3304719a0f6a2 ""
+  "bare_conf.aux" 1556744863 4480 a492b0b8347877de4e8e4c4c35306f75 ""
+  "bare_conf.tex" 1556744881 19632 a52e1c1298e75f43f9d225a0bcb59865 ""
   "images/Leap-db1.png" 1556086415 101237 281001f0a1b0f3301839a0770cf64ed8 ""
   "images/Leap-db2.png" 1556086406 73576 a5c04bcd5309cfe7ded8346308dda041 ""
   "images/entangled_low.png" 1556079069 321691 94035be68549cdc74b580978a2154b97 ""
@@ -106,6 +109,6 @@
   (generated)
   "/Users/dhruv/Projects/qca/paper/bare_conf.pdf"
   "bare_conf.pdf"
+  "bare_conf.log"
   "bare_conf.aux"
   "/Users/dhruv/Projects/qca/paper/bare_conf.log"
-  "bare_conf.log"
